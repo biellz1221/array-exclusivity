@@ -1,0 +1,25 @@
+{
+	"name": "array-exclusivity",
+	"version": "1.0.0",
+	"description": "Find if an array has only the specific values you want.",
+	"main": "index.ts",
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/biellz1221/array-exclusivity.git"
+	},
+	"keywords": [
+		"array",
+		"manipulation",
+		"vanilla",
+		"js"
+	],
+	"author": "Gabriel Baptista",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/biellz1221/array-exclusivity/issues"
+	},
+	"homepage": "https://github.com/biellz1221/array-exclusivity#readme"
+}
