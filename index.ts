@@ -23,18 +23,7 @@ const isExclusive = (
 	if (typeof exclusiveValues !== "string" && originalArray.length === exclusiveValues.length) {
 		const exclusiveArray = exclusiveValues.map((item: string) => originalArray.find((find) => find === item));
 
-		if (
-			exclusiveValues.length === exclusiveArray.length && //
-			exclusiveArray.length === originalArray.length &&
-			exclusiveArray.every((item, index) => item === exclusiveValues[index])
-		) {
-			console.log({
-				curso: trueMessage,
-				exclusiveArray,
-				originalArray,
-				exclusiveValues,
-				ex: exclusiveArray.every((item, index) => item === exclusiveValues[index]),
-			});
+		if (exclusiveArray.every((item, index) => item === exclusiveValues[index])) {
 			return {
 				isExclusive: true,
 				message: trueMessage ? trueMessage : "É exclusivo",
